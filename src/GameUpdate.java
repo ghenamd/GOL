@@ -16,10 +16,9 @@ public class GameUpdate  {
             public void run() {
 
                 Grid.changeGridState();
-                Grid.update();
-                 grid.repaint();
+                grid.repaint();
 
             }
-        },0,150);
+        },0,250);
 }
 }
