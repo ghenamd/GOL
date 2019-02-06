@@ -1,51 +1,50 @@
 package logic;
-
 import java.util.Random;
+import static utils.Const.COLMS;
+import static utils.Const.ROWS;
 
 public class GameLogic {
 
-    private  int colms = 60;
-    private  int rows = 60;
     private int alive = 1;
     private int dead = 0;
-    private  int[][] grid;
-
+    private  int[][] currentGrid;
     public GameLogic() {
-        grid = new int[colms][rows];
+        currentGrid = new int[COLMS][ROWS];
         init();
     }
+    //Method to change the state of the currentGrid from the current currentGrid to next currentGrid
     public  void changeGridState() {
-        //Create next sate of the grid to be swapped with the initial one
-        int[][] nextGrid = new int[rows][colms];
-        for (int i = 1; i < rows - 1; i++) {
-            for (int j = 1; j < colms - 1; j++) {
-                int neighbours = countCells(grid, i, j);
+        //Create next sate of the currentGrid to be swapped with the initial one
+        int[][] nextGrid = new int[COLMS][ROWS];
+        for (int i = 1; i < COLMS - 1; i++) {
+            for (int j = 1; j < ROWS - 1; j++) {
+                int neighbours = countCells(currentGrid, i, j);
                 //Apply the Game Of Life rules
-                if (grid[i][j] == alive && (neighbours < 2 || neighbours > 3)) {
+                if (currentGrid[i][j] == alive && (neighbours < 2 || neighbours > 3)) {
                     nextGrid[i][j] = dead;
                 }
-                if (grid[i][j] == alive && (neighbours == 3 || neighbours == 2)) {
+                if (currentGrid[i][j] == alive && (neighbours == 3 || neighbours == 2)) {
                     nextGrid[i][j] = alive;
                 }
-                if (grid[i][j] == dead && neighbours == 3) {
+                if (currentGrid[i][j] == dead && neighbours == 3) {
                     nextGrid[i][j] = alive;
                 }
             }
         }
-        grid= nextGrid;
+        currentGrid = nextGrid;
     }
 
-    //Method to provide int[][] grid 2D array for the Grid class to be painted
-    public int[][] getGrid() {
-        return grid;
+    //Method to provide int[][] currentGrid 2D array for the Grid class to draw the cell grid
+    public int[][] getCurrentGrid() {
+        return currentGrid;
     }
 
-    //Initialize the int[][] grid 2D array at the beginning of the game
-    private     void init() {
+    //Initialize the int[][] currentGrid 2D array at the beginning of the game
+    private void init() {
         Random random = new Random();
-        for (int i =0;i < colms;i++) {
-            for (int j =0;j < rows;j++) {
-                grid[i][j] = random.nextInt(2);
+        for (int i = 0; i < COLMS; i++) {
+            for (int j = 0; j < ROWS; j++) {
+                currentGrid[i][j] = random.nextInt(2);
             }
         }
     }
@@ -54,10 +53,10 @@ public class GameLogic {
         int sum = 0;
         for (int i = -1; i <= 1; i++) {
             for (int j = -1; j <= 1; j++) {
-                sum += grid[x+i][y+j];
+                sum =sum + grid[x+i][y+j];
             }
         }
-        sum -= grid[x][y];
+        sum = sum- grid[x][y];
         return sum;
     }
 

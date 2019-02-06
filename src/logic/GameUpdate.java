@@ -5,7 +5,6 @@ import ui.Grid;
 public class GameUpdate extends Thread {
     private Grid grid;
     private GameLogic logic;
-
     public GameUpdate(Grid grid,GameLogic logic) {
         this.grid = grid;
         this.logic = logic;
@@ -15,6 +14,7 @@ public class GameUpdate extends Thread {
     public void run() {
         while(true) {
             try {
+                //Delay the thread for 1 sec
                 sleep(100);
                 logic.changeGridState();
                 grid.repaint();

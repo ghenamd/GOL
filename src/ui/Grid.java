@@ -1,45 +1,47 @@
 package ui;
 import logic.GameLogic;
+import utils.Const;
 import javax.swing.*;
 import java.awt.*;
+import static utils.Const.*;
 
 public class Grid extends JPanel {
 
-    private  GameLogic grid ;
+    private GameLogic grid;
+
     public Grid(GameLogic grid) {
-       this.grid= grid;
+        this.grid = grid;
     }
+
     @Override
     protected void paintComponent(Graphics g) {
-        int colms = 60;
-        int rows = 60;
-        int cellSize = 10;
         super.paintComponent(g);
         Graphics2D grf = (Graphics2D) g;
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < colms; j++) {
+        for (int i = 0; i < COLMS; i++) {
+            for (int j = 0; j < ROWS; j++) {
                 //Get the int[][] grid 2D array from the GameLogic and paint  it
-                if (grid.getGrid()[i][j] == 1) {
+                if (grid.getCurrentGrid()[i][j] == 1) {
                     grf.setColor(Color.BLACK);
-                    grf.fillRect(i * cellSize, j * cellSize, cellSize, cellSize);
-                } else if (grid.getGrid()[i][j] == 0) {
+                    grf.fillRect(i * CELL_SIZE, j * CELL_SIZE, CELL_SIZE, CELL_SIZE);
+                } else if (grid.getCurrentGrid()[i][j] == 0) {
                     grf.setColor(Color.WHITE);
-                    grf.fillRect(i * cellSize, j * cellSize, cellSize, cellSize);
+                    grf.fillRect(i * CELL_SIZE, j * CELL_SIZE, CELL_SIZE, CELL_SIZE);
                 }
             }
             grf.setColor(Color.BLACK);
             //Divide rectangles by drawing lines between them
-            for (int k = 0; k <= rows; k++) {
-                grf.drawLine(0, k * cellSize, cellSize * rows, k * cellSize);
+            for (int k = 0; k <= ROWS; k++) {
+                grf.drawLine(0, k * CELL_SIZE, Const.WIDTH, k * CELL_SIZE);
             }
-            for (int l = 0; l <= colms; l++) {
-                grf.drawLine(l * cellSize, 0, l * cellSize, cellSize * colms);
+            for (int l = 0; l <= COLMS; l++) {
+                grf.drawLine(l * CELL_SIZE, 0, l * CELL_SIZE, Const.HEIGHT);
             }
         }
     }
+
     @Override
     public Dimension getPreferredSize() {
         //Set the preferred dimensions of the grid when jframe it's packed grid is not hidden
-        return new Dimension(600,600);
+        return new Dimension(Const.WIDTH, Const.HEIGHT);
     }
 }
