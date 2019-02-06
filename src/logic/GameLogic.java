@@ -60,8 +60,12 @@ public class GameLogic {
         return sum;
     }
 
-    //Method to count neighbours
-    private  int countCells(int[][] grid, int i, int j) {
+    /**
+     *  Method to count neighbours
+     *   @param i: array index
+     * @param j: array index
+     */
+    public  int countCells(int[][] grid, int i, int j) {
         int sum = 0;
         if (grid[i - 1][j] == alive) {
             sum++;
