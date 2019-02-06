@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7cc2cf3-96d2-4123-9f8d-c2e2de414209" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GOL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GOL.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GOL/logic/GameLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GOL/logic/GameLogic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GOL/logic/GameUpdate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GOL/logic/GameUpdate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GOL/ui/Grid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GOL/ui/Grid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GOL/ui/Gui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GOL/ui/Gui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GOL/utils/Const.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GOL/utils/Const.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/GameLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/GameUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/GameUpdate.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="192">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -33,17 +26,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/logic/GameLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+            <state relative-caret-position="624">
+              <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+              <folding>
+                <element signature="e#1474#1475#0" expanded="true" />
+                <element signature="e#1508#1509#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/Grid.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/GameOfLifeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+            <state relative-caret-position="648">
+              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,23 +90,23 @@
         <option value="$PROJECT_DIR$/src/ui/Gui.java" />
         <option value="$PROJECT_DIR$/src/utils/Const.java" />
         <option value="$PROJECT_DIR$/src/test.iml" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/src/Main.java" />
         <option value="$PROJECT_DIR$/src/src/ui/Gui.java" />
         <option value="$PROJECT_DIR$/src/logic/GameUpdate.java" />
         <option value="$PROJECT_DIR$/test/logic/GameLogicTest.java" />
         <option value="$PROJECT_DIR$/test/logic/GameOfLifeTest.java" />
         <option value="$PROJECT_DIR$/test/GameLogicTest.java" />
-        <option value="$PROJECT_DIR$/src/logic/GameLogic.java" />
         <option value="$PROJECT_DIR$/test/GameOfLifeTest.java" />
+        <option value="$PROJECT_DIR$/src/logic/GameLogic.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1546" />
+    <option name="y" value="-141" />
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -169,7 +175,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549473476124" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549481871577" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -205,7 +211,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GameOfLifeTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="GOL" />
@@ -253,8 +259,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GameOfLifeTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.GameOfLifeTest" />
         <item itemvalue="Application.Start" />
         <item itemvalue="Application.UserInterface" />
       </list>
@@ -283,6 +289,12 @@
     <history-entry file="GameOfLifeTest - 2019.02.06 at 17h 07m 14s.xml">
       <configuration name="GameOfLifeTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GameOfLifeTest - 2019.02.06 at 17h 17m 31s.xml">
+      <configuration name="GameOfLifeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTest - 2019.02.06 at 17h 18m 04s.xml">
+      <configuration name="GameOfLifeTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -294,17 +306,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-1546" y="-141" width="1366" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4923339" visible="true" weight="0.22560975" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4923339" visible="true" weight="0.2970679" />
       <window_info id="Structure" order="1" sideWeight="0.5076661" side_tool="true" weight="0.29115853" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info active="true" id="Run" order="7" sideWeight="0.5076661" side_tool="true" visible="true" weight="0.22560975" />
+      <window_info id="Run" order="7" sideWeight="0.5076661" side_tool="true" weight="0.2934451" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32879046" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
@@ -400,7 +412,6 @@
     <entry file="file://$PROJECT_DIR$/src/game/Timer.java" />
     <entry file="file://$PROJECT_DIR$/src/main/Start.java" />
     <entry file="file://$PROJECT_DIR$/src/ui/StartGame.java" />
-    <entry file="file://$PROJECT_DIR$/src/ui/Grid.java" />
     <entry file="file://$PROJECT_DIR$/src/ui/Gui.java" />
     <entry file="file://$PROJECT_DIR$/src/utils/Const.java" />
     <entry file="file://$PROJECT_DIR$/src/logic/GameUpdate.java">
@@ -420,27 +431,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/Grid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="312">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/GameLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+        <state relative-caret-position="624">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding>
+            <element signature="e#1474#1475#0" expanded="true" />
+            <element signature="e#1508#1509#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/GameOfLifeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+        <state relative-caret-position="648">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
     </entry>

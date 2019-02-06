@@ -9,7 +9,7 @@ import ui.Gui;
  * in utils package-Const class.
  * If the user needs a bigger cell size, CELL_SIZE variable should be increased.
  * The number of rows and columns are calculated automatically depending
- * on WIDTH and HEIGHT variables
+ * on the WIDTH and the HEIGHT variables
  * The Game can be stopped/closed by closing the Ui window
  */
 public class Main {

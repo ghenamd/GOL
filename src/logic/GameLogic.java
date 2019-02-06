@@ -14,18 +14,25 @@ public class GameLogic {
     }
     //Method to change the state of the currentGrid from the current currentGrid to next currentGrid
     public  void changeGridState() {
-        //Create next sate of the currentGrid to be swapped with the initial one
+        //Create the next grid to be swapped with the current one
         int[][] nextGrid = new int[COLMS][ROWS];
+        //In this example we do not take the edges into account
         for (int i = 1; i < COLMS - 1; i++) {
             for (int j = 1; j < ROWS - 1; j++) {
                 int neighbours = countCells(currentGrid, i, j);
                 //Apply the Game Of Life rules
+                //When a live cell has fewer than two neighbours or more than three
+                //	then this cell dies
                 if (currentGrid[i][j] == alive && (neighbours < 2 || neighbours > 3)) {
                     nextGrid[i][j] = dead;
                 }
+                //When a live cell has two or three neighbours
+                //	then this cell stays alive
                 if (currentGrid[i][j] == alive && (neighbours == 3 || neighbours == 2)) {
                     nextGrid[i][j] = alive;
                 }
+                //When an empty position has exactly three neighbouring cells
+                //	then a cell is created in this position
                 if (currentGrid[i][j] == dead && neighbours == 3) {
                     nextGrid[i][j] = alive;
                 }
@@ -48,7 +55,11 @@ public class GameLogic {
             }
         }
     }
-    //Method to count neighbours
+    /**
+     *  Method to count neighbours
+     *   @param x: array index
+     * @param y: array index
+     */
     private  int countNeighbours(int[][] grid, int x, int y) {
         int sum = 0;
         for (int i = -1; i <= 1; i++) {
