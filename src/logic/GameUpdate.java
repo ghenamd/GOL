@@ -19,6 +19,8 @@ public class GameUpdate extends Thread {
                 //Delay the thread for 1 sec
                 sleep(100);
                 logic.changeGridState();
+                //We can call repaint from inside Grid paintComponent method
+                //or GameUpdate thread
                 grid.repaint();
             } catch (InterruptedException e) {
                 e.printStackTrace();
